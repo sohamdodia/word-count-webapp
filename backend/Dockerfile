@@ -10,7 +10,8 @@ RUN apk update && apk add --no-cache nmap && \
       ttf-freefont \
       nss
 
-ENV PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true
+ENV PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true \
+    PUPPETEER_EXECUTABLE_PATH=/usr/bin/chromium-browser
 WORKDIR "/app"
 COPY ./ ./
 RUN npm install
