@@ -70,7 +70,11 @@ const App = () => {
           <h2>Previously Visited URLs</h2>
           <ul>
             {Object.keys(history).map((h) => {
-              return <li onClick={() => handleHistoryClick(h)}>{h}</li>;
+              return (
+                <li onClick={() => handleHistoryClick(h)}>
+                  <span>{h}</span>
+                </li>
+              );
             })}
           </ul>
         </div>
