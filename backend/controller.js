@@ -8,6 +8,10 @@ const { extractPageText, wordCountWorker } = require("./utils");
 const router = express.Router();
 
 const fetchDataFromUrl = async ({ url, sortBy, sortOrder }) => {
+  /**
+   * Here response has been cached with sortBy and sortOrder parameter
+   * Which can be replaced by just storing the response first and then applying sortyBy and sortOrder
+   */
   const key = `${url}_${sortBy}_${sortOrder}`;
 
   let result = await getRedisKey({ key });

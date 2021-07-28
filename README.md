@@ -14,8 +14,9 @@ OR
 ## 1. Via docker
 
 1. clone this repo
-2. `docker-compose up --build`
-3. go to: [http://localhost:3000](http://localhost:3000)
+2. cd into the folder
+3. `docker-compose up --build`
+4. go to: [http://localhost:3000](http://localhost:3000)
 
 ## 2. Run independently
 
