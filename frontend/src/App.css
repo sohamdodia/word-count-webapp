@@ -1,0 +1,45 @@
+.App {
+  max-width: 400px;
+  margin: 40px auto;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+form > * {
+  display: inline-block;
+}
+
+form > *:not(:last-child) {
+  margin-right: 8px;
+}
+
+th {
+  text-align: start;
+}
+
+ul {
+  display: "inline-block";
+  margin-top: 0;
+}
+
+li {
+  cursor: "pointer";
+}
+
+.radio-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+h4 {
+  padding: 10px;
+  margin: auto 0;
+}
